@@ -6,28 +6,28 @@ import groom from "@/assets/groom.jpg";
 const ENTRIES = [
   {
     img: bride,
-    name: "Isha",
+    name: "Asmita",
     quote:
-      "Marriages are made in heaven, and celebrated on earth — when two families unite, two hearts find their forever.",
+      "Two families, one blessing. Brought together by the grace of elders and the warmth of tradition, our union was written in the stars.",
     tone: "#B76E79",
   },
   {
     img: groom,
-    name: "Aarav",
+    name: "Aditya",
     quote:
-      "An arranged match is not the absence of love — it is love woven by the wisdom of those who raised us.",
+      "An arranged match is not the absence of love — it is love woven by the wisdom of those who raised us, sealed with the sacred thread of shaadi.",
     tone: "#E8954A",
   },
   {
     img: bride,
-    name: "Isha",
+    name: "Asmita",
     quote:
-      "Two families, one blessing. A bond chosen with care, sealed with devotion, and lived with grace.",
+      "From two homes a single hearth — a bond chosen with care, sealed with devotion, and lived with grace.",
     tone: "#B76E79",
   },
   {
     img: groom,
-    name: "Aarav",
+    name: "Aditya",
     quote:
       "Where elders guide and hearts agree, every promise becomes a prayer — and every prayer, a beginning.",
     tone: "#E8954A",

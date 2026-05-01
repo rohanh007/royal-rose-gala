@@ -58,7 +58,7 @@ export function CoupleSection() {
     <section className="relative py-24 px-6">
       <SectionHeading kicker="The happy couple">Bride & Groom</SectionHeading>
       <div className="max-w-6xl mx-auto grid md:grid-cols-[1fr_auto_1fr] items-center gap-10">
-        <PortraitFrame src={bride} name="Isha Sharma" role="The Bride" tone="rose" alt="Portrait of the bride Isha" />
+        <PortraitFrame src={bride} name="Asmita" role="The Bride" tone="rose" alt="Portrait of the bride Asmita" />
 
         {/* Morphing heart */}
         <motion.div
@@ -81,7 +81,7 @@ export function CoupleSection() {
           </svg>
         </motion.div>
 
-        <PortraitFrame src={groom} name="Aarav Verma" role="The Groom" tone="blue" alt="Portrait of the groom Aarav" />
+        <PortraitFrame src={groom} name="Aditya" role="The Groom" tone="blue" alt="Portrait of the groom Aditya" />
       </div>
 
     </section>

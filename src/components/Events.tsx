@@ -3,13 +3,15 @@ import { SectionHeading } from "./SectionHeading";
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 
+const VENUE = "Baliraja Sanskrutik Bhavan, Kalamb - Walchandnagar Road, Kalamb, Tal Indapur, Dist Pune";
+
 const EVENTS = [
-  { key: "engagement", icon: "💍", name: "Engagement", date: "10 Feb 2027", time: "7:00 PM", dress: "Formal", venue: "Taj Lake Palace, Udaipur" },
-  { key: "haldi", icon: "🌼", name: "Haldi", date: "12 Feb 2027", time: "10:00 AM", dress: "Yellow attire", venue: "Family residence" },
-  { key: "mehendi", icon: "🌿", name: "Mehendi", date: "12 Feb 2027", time: "4:00 PM", dress: "Green / pastel", venue: "Garden Pavilion" },
-  { key: "sangeet", icon: "🎶", name: "Sangeet", date: "13 Feb 2027", time: "8:00 PM", dress: "Festive", venue: "Royal Banquet Hall" },
-  { key: "wedding", icon: "🕉️", name: "Wedding Ceremony", date: "14 Feb 2027", time: "5:00 PM", dress: "Traditional", venue: "Jagmandir Island Palace" },
-  { key: "reception", icon: "🥂", name: "Reception", date: "15 Feb 2027", time: "8:00 PM", dress: "Black tie", venue: "The Oberoi Udaivilas" },
+  { key: "engagement", icon: "💍", name: "Sakharpuda", date: "02 May 2026", time: "11:00 AM", dress: "Traditional", venue: "Family residence, Kalamb" },
+  { key: "haldi", icon: "🌼", name: "Haldi", date: "05 May 2026", time: "10:00 AM", dress: "Yellow attire", venue: "Family residence, Kalamb" },
+  { key: "mehendi", icon: "🌿", name: "Mehendi", date: "05 May 2026", time: "4:00 PM", dress: "Green / pastel", venue: "Family residence, Kalamb" },
+  { key: "sangeet", icon: "🎶", name: "Sangeet", date: "05 May 2026", time: "8:00 PM", dress: "Festive", venue: VENUE },
+  { key: "wedding", icon: "🕉️", name: "Wedding Ceremony", date: "06 May 2026 (Wed)", time: "12:35 PM", dress: "Traditional", venue: VENUE },
+  { key: "reception", icon: "🥂", name: "Reception", date: "06 May 2026", time: "7:30 PM", dress: "Formal", venue: VENUE },
 ];
 
 export function Events() {

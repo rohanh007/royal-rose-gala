@@ -22,10 +22,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Aarav & Isha — A Royal Wedding Invitation" },
-      { name: "description", content: "Join us as we celebrate the wedding of Aarav & Isha on 14 February 2027 in Udaipur." },
-      { property: "og:title", content: "Aarav & Isha — Wedding Invitation" },
-      { property: "og:description", content: "A royal celebration of love. 14 February 2027, Udaipur." },
+      { title: "Aditya & Asmita — Wedding Invitation" },
+      { name: "description", content: "Join us as we celebrate the wedding of Aditya & Asmita on 6 May 2026 at Kalamb, Tal Indapur, Dist Pune." },
+      { property: "og:title", content: "Aditya & Asmita — Wedding Invitation" },
+      { property: "og:description", content: "A joyous celebration of love. 6 May 2026, Baliraja Sanskrutik Bhavan, Kalamb." },
     ],
   }),
 });
@@ -47,9 +47,11 @@ function Index() {
         <section id="invitation"><Invitation /></section>
         <section id="gallery"><Gallery /></section>
         <section id="video"><VideoSection /></section>
+        {/* Hidden per request: RSVP, Wishes Wall, Registry
         <section id="rsvp"><RSVP /></section>
         <section id="wishes"><WishesWall /></section>
         <section id="registry"><Registry /></section>
+        */}
         <Footer />
       </div>
       <MusicToggle />

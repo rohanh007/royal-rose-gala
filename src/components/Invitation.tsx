@@ -31,7 +31,7 @@ export function Invitation() {
             className="absolute -top-6 -right-6 w-16 h-16 rounded-full flex items-center justify-center font-script text-[var(--cream)] text-2xl shadow-xl"
             style={{ background: "radial-gradient(circle, #C0582A, #7a2f10)" }}
           >
-            A&I
+            A&A
           </motion.div>
 
           <p className="font-display text-xl md:text-2xl leading-relaxed text-[var(--ink)]/90">
@@ -66,7 +66,7 @@ export function Invitation() {
                 }}
               />
             </motion.svg>
-            <p className="font-script text-2xl text-[var(--terracotta)] mt-2">— The Sharma & Verma Families</p>
+            <p className="font-script text-2xl text-[var(--terracotta)] mt-2">— With love, both our families</p>
           </div>
         </motion.div>
 

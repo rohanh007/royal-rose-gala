@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const NAMES = "Aarav  &  Isha";
+const NAMES = "Aditya  &  Asmita";
 
 export function Hero() {
   return (
@@ -97,7 +97,10 @@ export function Hero() {
         >
           <div className="font-script text-2xl text-[var(--terracotta)]">Save the Date</div>
           <div className="font-display text-3xl md:text-4xl tracking-wider mt-1">
-            14 · February · 2027
+            06 · May · 2026
+          </div>
+          <div className="text-xs tracking-[0.3em] uppercase text-[var(--ink)]/60 mt-2">
+            Wednesday · 12:35 PM · Kalamb, Pune
           </div>
         </motion.div>
       </div>

@@ -7,10 +7,9 @@ const LINKS = [
   { id: "couple", label: "Couple" },
   { id: "story", label: "Story" },
   { id: "events", label: "Events" },
+  { id: "invitation", label: "Invitation" },
   { id: "gallery", label: "Gallery" },
   { id: "video", label: "Video" },
-  { id: "rsvp", label: "RSVP" },
-  { id: "wishes", label: "Wishes" },
 ];
 
 export function Navbar() {
@@ -56,10 +55,10 @@ export function Navbar() {
             className="w-9 h-9 rounded-full flex items-center justify-center font-script text-[var(--cream)] text-lg shadow-md group-hover:scale-110 transition-transform"
             style={{ background: "radial-gradient(circle, #E8954A, #C0582A)" }}
           >
-            A&I
+            A&A
           </span>
           <span className="font-script text-2xl text-[var(--terracotta)] hidden sm:inline">
-            Aarav &amp; Isha
+            Aditya &amp; Asmita
           </span>
         </button>
 
@@ -79,10 +78,10 @@ export function Navbar() {
         </ul>
 
         <button
-          onClick={() => go("rsvp")}
+          onClick={() => go("invitation")}
           className="hidden md:inline-flex items-center px-4 py-2 rounded-full bg-[var(--terracotta)] text-[var(--cream)] text-xs uppercase tracking-[0.2em] font-display hover:shadow-[0_0_20px_rgba(192,88,42,0.6)] transition-all"
         >
-          RSVP
+          Invite
         </button>
 
         {/* Mobile burger */}

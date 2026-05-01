@@ -98,9 +98,9 @@ export function Curtain({ onOpen }: { onOpen: () => void }) {
                   }}
                 >
                   <div className="text-[#FDF6E3]">
-                    <div className="font-script text-3xl leading-none">Aarav</div>
+                    <div className="font-script text-3xl leading-none">Aditya</div>
                     <div className="font-display tracking-[0.4em] text-[10px] my-1">— & —</div>
-                    <div className="font-script text-3xl leading-none">Isha</div>
+                    <div className="font-script text-3xl leading-none">Asmita</div>
                     <div className="mt-3 text-[10px] tracking-[0.3em] uppercase">Click to Open</div>
                   </div>
                 </motion.div>
