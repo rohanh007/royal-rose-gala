@@ -84,31 +84,6 @@ export function CoupleSection() {
         <PortraitFrame src={groom} name="Aarav Verma" role="The Groom" tone="blue" alt="Portrait of the groom Aarav" />
       </div>
 
-      {/* How we met */}
-      <div className="mt-20 max-w-3xl mx-auto">
-        <h3 className="text-center font-display text-3xl mb-10">How we met</h3>
-        <div className="relative pl-10 border-l-2 border-dashed border-[var(--gold)] space-y-10">
-          {[
-            { y: "Spring 2022", t: "A chance encounter", d: "Met at a friend's birthday — sparks at first 'hello'." },
-            { y: "Winter 2023", t: "Falling in love", d: "Long walks, longer conversations, endless laughter." },
-            { y: "Summer 2025", t: "The proposal", d: "Under a sky full of fireworks. She said yes." },
-          ].map((m, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="relative"
-            >
-              <span className="absolute -left-[46px] top-1 w-4 h-4 rounded-full bg-[var(--terracotta)] ring-4 ring-[var(--cream)]" />
-              <div className="font-script text-xl text-[var(--terracotta)]">{m.y}</div>
-              <div className="font-display text-2xl">{m.t}</div>
-              <p className="text-[var(--ink)]/70">{m.d}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
