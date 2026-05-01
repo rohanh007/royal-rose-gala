@@ -72,10 +72,10 @@ export function Countdown() {
           ))}
         </svg>
         <div className="flex justify-center gap-3 md:gap-6">
-          <FlipDigit value={t.days} label="Days" />
-          <FlipDigit value={t.hours} label="Hours" />
-          <FlipDigit value={t.minutes} label="Minutes" />
-          <FlipDigit value={t.seconds} label="Seconds" />
+          <FlipDigit value={mounted ? t.days : 0} label="Days" />
+          <FlipDigit value={mounted ? t.hours : 0} label="Hours" />
+          <FlipDigit value={mounted ? t.minutes : 0} label="Minutes" />
+          <FlipDigit value={mounted ? t.seconds : 0} label="Seconds" />
         </div>
       </div>
     </section>
