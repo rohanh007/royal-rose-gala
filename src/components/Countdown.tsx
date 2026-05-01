@@ -42,7 +42,9 @@ function FlipDigit({ value, label }: { value: number; label: string }) {
 export function Countdown() {
   // Start at zeros so SSR markup matches first client render, then update.
   const [t, setT] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
+    setMounted(true);
     setT(diff());
     const id = setInterval(() => {
       const n = diff();
