@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import { SectionHeading } from "./SectionHeading";
 
-const TARGET = new Date("2027-02-14T17:00:00").getTime();
+const TARGET = new Date("2026-05-06T12:35:00").getTime();
 
 function diff() {
   const d = Math.max(0, TARGET - Date.now());
