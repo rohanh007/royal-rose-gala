@@ -1,44 +1,68 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
-
-const MILESTONES = [
-  { date: "Mar 2022", title: "First Meeting", desc: "Coffee shop in Bandra — a spilled latte started it all." },
-  { date: "Jun 2022", title: "First Date", desc: "Sunset by the Marine Drive promenade." },
-  { date: "Dec 2023", title: "Families Met", desc: "A warm Diwali evening filled with laughter." },
-  { date: "Aug 2025", title: "The Proposal", desc: "On a hilltop in Udaipur, fireworks above." },
-  { date: "Oct 2025", title: "Engagement", desc: "Surrounded by all our loved ones." },
-];
+import bride from "@/assets/bride.jpg";
+import groom from "@/assets/groom.jpg";
 
 export function Story() {
   return (
-    <section className="relative py-24 px-6">
-      <SectionHeading kicker="Our journey">A Love Story</SectionHeading>
-      <div className="relative max-w-3xl mx-auto">
+    <section className="relative py-24 px-6 overflow-hidden">
+      <SectionHeading kicker="Bound by tradition, blessed by love">
+        Two Families, One Bond
+      </SectionHeading>
+
+      <div className="relative max-w-5xl mx-auto grid md:grid-cols-[1fr_auto_1fr] items-center gap-10">
+        {/* Bride image */}
         <motion.div
-          className="absolute left-1/2 top-0 bottom-0 w-px origin-top"
-          style={{ background: "linear-gradient(180deg, var(--terracotta), var(--gold))" }}
-          initial={{ scaleY: 0 }}
-          whileInView={{ scaleY: 1 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1.6 }}
-        />
-        {MILESTONES.map((m, i) => (
-          <motion.div
-            key={i}
-            className={`relative mb-10 grid grid-cols-2 gap-8 items-center ${i % 2 ? "" : ""}`}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="relative justify-self-center"
+        >
+          <div
+            className="w-56 h-72 md:w-64 md:h-80 overflow-hidden rounded-t-full rounded-b-md"
+            style={{ boxShadow: "0 0 40px #B76E7955, inset 0 0 0 4px #D4AF37" }}
           >
-            <div className={i % 2 === 0 ? "text-right pr-8" : "col-start-2 pl-8"}>
-              <div className="font-script text-xl text-[var(--terracotta)]">{m.date}</div>
-              <div className="font-display text-2xl">{m.title}</div>
-              <p className="text-[var(--ink)]/70 mt-1">{m.desc}</p>
-            </div>
-            <span className="absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-[var(--gold)] ring-4 ring-[var(--cream)] shadow-[0_0_18px_var(--gold)]" />
-          </motion.div>
-        ))}
+            <img src={bride} alt="The bride" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-center mt-4 font-script text-3xl text-[var(--terracotta)]">Isha</div>
+        </motion.div>
+
+        {/* Quote */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="glass-card relative px-8 py-10 max-w-md mx-auto text-center"
+          style={{ boxShadow: "0 0 30px #D4AF3744" }}
+        >
+          <div className="font-display text-7xl leading-none text-[var(--gold)] absolute top-2 left-4 opacity-60">“</div>
+          <div className="font-display text-7xl leading-none text-[var(--gold)] absolute bottom-2 right-4 opacity-60">”</div>
+          <p className="font-display text-2xl md:text-3xl italic text-[var(--ink)] leading-relaxed">
+            Marriages are made in heaven, and celebrated on earth — when two families
+            unite, two hearts find their forever.
+          </p>
+          <div className="mt-6 mx-auto h-px w-24" style={{ background: "linear-gradient(90deg, transparent, var(--gold), transparent)" }} />
+          <p className="mt-4 font-script text-2xl text-[var(--terracotta)]">An Arranged Union, A Divine Blessing</p>
+        </motion.div>
+
+        {/* Groom image */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9 }}
+          className="relative justify-self-center"
+        >
+          <div
+            className="w-56 h-72 md:w-64 md:h-80 overflow-hidden rounded-t-full rounded-b-md"
+            style={{ boxShadow: "0 0 40px #E8954A55, inset 0 0 0 4px #D4AF37" }}
+          >
+            <img src={groom} alt="The groom" className="w-full h-full object-cover" />
+          </div>
+          <div className="text-center mt-4 font-script text-3xl text-[var(--terracotta)]">Aarav</div>
+        </motion.div>
       </div>
     </section>
   );
